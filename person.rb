@@ -1,6 +1,8 @@
 class Person
   @name = nil
   @eage = nil
+  @sexo = nil
+  attr_accessor :cpf
 
   def set_name(name)
     @name = name
@@ -16,6 +18,14 @@ class Person
 
   def get_eage
     @eage
+  end
+
+  def sex=(sex)
+    @sex = sex
+  end
+
+  def sex
+    @sex
   end
 
   def shout
@@ -41,3 +51,9 @@ puts result
 obj.set_eage(22)
 obj.set_name("Raquel")
 puts obj.get_name
+
+obj.sex = "fem"
+puts obj.sex
+
+obj.cpf = "0598478392"
+puts obj.cpf
