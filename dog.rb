@@ -16,4 +16,4 @@ dog = Dog.new("Hulk", "Bulldog")
 puts dog.name
 puts dog.breed
 puts dog.bark
-# dog.breed = "auau"
+# dog.breed = "auau" Error
